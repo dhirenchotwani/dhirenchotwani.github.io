@@ -685,7 +685,7 @@
 							
 							<div class="col-xs-12 col-sm-7 col-md-7 col-lg-8" id="contact">
 								<div class="panel-box">
-						<form action="sendMail.php" method="post">
+					
 										<div class="row">
 											<div class="col-sm-12 col-sm-6">
 												<div class="form-group">
@@ -708,9 +708,12 @@
 											<textarea placeholder="Your Comments" id="message" cols="20" rows="6" class="form-control" required data-error="Please enter your comments" name="message"></textarea>
 											<div class="help-block with-errors"></div>
 										</div>
-										<input value="Submit" name="submit" class="btn btn-default" type="submit">
-										<div id="msgSubmit" class="h3 text-center hidden"></div>
-									</form>
+									<button onclick="sendMail()" class="btn btn-default">Submit</button>
+									
+										<div id="msgSubmit" class="h3 text-center" hidden>
+											<p id="textSuccess" style="color: green">Thankyou for providing your details , I will be contacting you soon!</p>
+										</div>
+									
 								</div>
 							</div>
 						
@@ -744,7 +747,32 @@
 		<!-- End Content Wrapper -->
 	</div>
 	<!-- End Main Container-->
+	<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script>
+	function sendMail(){
+		 
+		console.log("here!");
+		var name=document.getElementById("fname").value + " " + document.getElementById("lname").value;
+
+		var email=document.getElementById("email").value;
+		var msg=document.getElementById("message").value;
+		console.log(name + email + msg);
+		Email.send({
+			    SecureToken : "1db5fc01-672b-40cf-b520-c5b34db677bf",
+    			To : 'dhirenchotwani@gmail.com',
+				From : "dhirenchotwani@gmail.com",
+				Subject : "Enquiry from " + name ,
+				Body : name + "(" + email +")" + " left his contact details and a message for you on your portfolio. The message says " +msg 
+			}).then(
+
+			 document.getElementById("msgSubmit").style.display="block"
+				
+			);
 		
+			console.log("done");
+	}
+	</script>	
 	<script src="js/jquery.js" type="text/javascript"></script>
 	<script src="js/bootstrap.min.js" type="text/javascript"></script>
 	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
