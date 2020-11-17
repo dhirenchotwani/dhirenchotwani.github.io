@@ -409,11 +409,11 @@
 										<div class="timeline-panel">
 											<div class="timeline-heading">
 												<h2>BE in <b style="color: #04456b">Computer Engineering</b></h2>
-												<h3>Grade : 8.95 (sem VII)</h3>
-												<span class="date">2017 - 2020(Expected)</span>
+												<h3>Grade : 9.12</h3>
+												<span class="date">2017 - 2020</span>
 											</div>
 											<div class="timeline-body">
-												<p>Pursuing my Bachelors Degree from <a style="color: #04456b" href="https://ves.ac.in/vesit/">Vivekananda Education Society's Institute of Technology</a>, Chembur. </p>
+												<p>Completed my Bachelor's Degree from <a style="color: #04456b" href="https://ves.ac.in/vesit/">Vivekananda Education Society's Institute of Technology</a>, Chembur. </p>
 											</div>
 											
 										</div>
@@ -731,7 +731,7 @@
 						<div class="row" >
 							<div class="col-xs-12">
 								<div class="copyright text-center">
-									<p>Dhiren Chotwani © Copyright 2019. All Rights Reserved.</p>
+									<p>Dhiren Chotwani © Copyright <span id="year"></span>. All Rights Reserved.</p>
 								</div>
 							</div>
 						</div>
@@ -749,6 +749,9 @@
 	</div>
 	<!-- End Main Container-->
 	<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script>
+	document.getElementById('year').innerHTML=new Date().getFullYear();
 </script>
 <script>
 	function sendMail(){
@@ -773,8 +776,7 @@
 			 document.getElementById("msgSubmit").style.display="block"
 				
 			);
-//		
-			console.log("done");
+//console.log("done");
 		}
 	}
 	</script>	

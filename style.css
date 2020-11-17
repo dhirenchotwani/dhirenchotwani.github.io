@@ -384,7 +384,7 @@ section:nth-child(2n){
 	width:100%!important;
 }
 .jspDrag{
-	background:rgba(0, 0, 0, 0.1);
+	background:rgba(0, 0, 255, 0.1);
 	-webkit-border-radius:5px;
 	-moz-border-radius:5px;
 	border-radius:5px;
