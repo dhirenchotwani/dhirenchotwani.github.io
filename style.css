@@ -609,6 +609,38 @@ b{
 	display:table-cell;
 	font-size:13px;
 }
+.exp-info {
+	width: 100%;
+	float: left;
+	height: auto;
+	margin-top:-2.2% ;
+}
+
+.exp-info li {
+	width: 100%;
+	float: left;
+	margin: 0 0 9px;
+}
+
+.exp-info li:last-child {
+	margin: 0;
+}
+
+.exp-info li span {
+	float: left;
+	width: 100px;
+	height: auto;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.exp-info li span.info {
+	font-weight: 400;
+	float: none;
+	width: auto;
+	display: table-cell;
+	font-size: 14px;
+}
 .professional-profile .btn.btn-primary{
 	margin-right:10px;
 }
