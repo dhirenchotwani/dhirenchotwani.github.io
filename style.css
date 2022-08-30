@@ -953,9 +953,46 @@ b{
     float: none !important;
 }
 
-#experience .job-title{
-		width: 120%;
-	}
+
+.techstack > .divider{
+	font-size:19px
+}
+
+.techstack > img{
+margin: 0 2.5px;
+margin-top: -5px;
+}
+
+.workExp{
+	margin: 10px 0;;
+	margin-left: 15px;
+	
+}
+
+.workExp > ul{
+	list-style-type: disc;
+}
+
+.workExp > ul{
+		list-style: none;
+}
+
+	  
+.workExp li::before {
+	content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+	color: #04456b; /* Change the color */
+	font-weight: bold; /* If you want it to be bold */
+	display: inline-block; /* Needed to add space between the bullet and the text */
+	width: 1em; /* Also needed for space (tweak if needed) */
+	margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+
+ 
+
+  .workExp li > b{
+	color: #04456b;
+  }
+
 
 
 /*========================= Portfolio ======================*/
