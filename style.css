@@ -953,6 +953,11 @@ b{
     float: none !important;
 }
 
+#experience .job-title{
+		width: 120%;
+	}
+
+
 /*========================= Portfolio ======================*/
 #filter-list{
 	width:100%;
@@ -1616,7 +1621,9 @@ ul.timeline > li:last-child{
 	width:100%;
 }
 
+	
 }
+
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
