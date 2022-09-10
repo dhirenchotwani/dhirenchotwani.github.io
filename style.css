@@ -1486,6 +1486,11 @@ footer p{
     width: 40px;
 }
 
+.phone{
+	padding-top: 10px;
+
+}
+
 /*=================== Responsive Design ==================*/
 @media only screen and (max-width: 479px){
 .portfolio_items li{
