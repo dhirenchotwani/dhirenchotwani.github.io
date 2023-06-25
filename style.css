@@ -953,6 +953,9 @@ b{
     float: none !important;
 }
 
+.techstack{
+	width: 110%;
+}
 
 .techstack > .divider{
 	font-size:19px
