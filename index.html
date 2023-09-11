@@ -833,7 +833,7 @@
 										</div>
 										
 										<div class="form-group">
-											<textarea placeholder="Your Comments" id="message" cols="20" rows="6" class="form-control" required data-error="Please enter your comments" name="message"></textarea>
+											<textarea placeholder="Your Message Here" id="message" cols="20" rows="6" class="form-control" required data-error="Please enter your comments" name="message"></textarea>
 											<div class="help-block with-errors"></div>
 										</div>
 									<button onclick="sendMail()" class="btn btn-default">Submit</button>
@@ -878,20 +878,19 @@
 		<!-- End Content Wrapper -->
 	</div>
 	<!-- End Main Container-->
-	<script src="https://smtpjs.com/v3/smtp.js">
-</script>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script>
 	let dt1 = Date.now();
 	let dt2 = new Date(2020,7,27).getTime();
 	var time =(dt2 - dt1) / 1000;
  	var month = Math.abs(Math.round(time/(60 * 60 * 24 * 7 * 4)));
 	//document.getElementById('months').innerHTML=month;
-	 document.getElementById('year').innerHTML=new Date().getFullYear();
+	document.getElementById('year').innerHTML=new Date().getFullYear();
 </script>
 <script>
 	function sendMail(){
 		 
-		console.log("here!");
+		console.log("inside send email!");
 		var name=document.getElementById("fname").value + " " + document.getElementById("lname").value;
 		
 		var email=document.getElementById("email").value;
@@ -903,8 +902,8 @@
 		else{
 			document.getElementById("msgFail").style.display="none"
 		Email.send({
-				SecureToken : "31ed6750-c063-477c-afb8-072981cf5f8a",
-    			To : 'dhirenchotwani@gmail.com',
+				SecureToken : "a5921d87-e2cf-40a3-bbbb-308c23b28f4c",
+    			To : "dhirenchotwani@gmail.com",
 				From : "dhirenchotwani@gmail.com",
 				Subject : "Enquiry from " + name ,
 				Body : name + "(" + email +")" + " left his contact details and a message for you on your portfolio. The message says " +msg 
