@@ -969,7 +969,7 @@ margin-top: -5px;
 .workExp{
 	margin: 10px 0;;
 	margin-left: 15px;
-	
+	text-align: justify;
 }
 
 .workExp > ul{
