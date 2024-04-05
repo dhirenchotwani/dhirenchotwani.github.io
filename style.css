@@ -416,7 +416,7 @@ section:nth-child(2n){
 	-moz-background-size:cover;
 	background-size:cover;
 	background-repeat:no-repeat;
-	background-position: top center;
+	background-position: center;
 }
 .banner::before{
 	width:100%;
